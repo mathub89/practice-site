@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: radial-gradient(ellipse at center, #23243a 0%, #0a0a1a 100%);
+            color: #e0e0ff;
+            font-family: 'Orbitron', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #2e2e4d 0%, #1a1a2e 100%);
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 0 20px #00ffe7;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0.2em;
+            color: #00ffe7;
+            text-shadow: 0 0 10px #00ffe7;
+            margin-bottom: 0.5rem;
+        }
+        .slogan {
+            font-size: 1.2rem;
+            color: #ff00c8;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 6px #ff00c8;
+        }
+        nav {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #00ffe7;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ff00c8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(34,36,58,0.85);
+            border-radius: 16px;
+            box-shadow: 0 0 30px #00ffe7;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .item {
+            background: #1a1a2e;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 0 10px #00ffe744;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff00c8;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px #00ffe7;
+        }
+        .item h2 {
+            color: #00ffe7;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        .item p {
+            color: #e0e0ff;
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            color: #8888aa;
+            background: #1a1a2e;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Print Works</h1>
+        <div class="slogan">Your vision, layer by layer</div>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="gallery">
+            <h2>Featured Prints</h2>
+            <div class="gallery">
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Spaceship Model">
+                    <h2>Spaceship Model</h2>
+                    <p>Detailed 3D printable spaceship for your sci-fi collection.</p>
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Alien Artifact">
+                    <h2>Alien Artifact</h2>
+                    <p>Mysterious artifact inspired by extraterrestrial technology.</p>
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Robot Companion">
+                    <h2>Robot Companion</h2>
+                    <p>Friendly robot design for desktop display or cosplay.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" style="margin-top:2rem;">
+            <h2>About</h2>
+            <p>
+                Welcome to Print Works! Explore a universe of printable models inspired by futuristic technology, space exploration, and creative visions. Perfect for hobbyists, makers, and fans of 3D printing.
+            </p>
+        </section>
+        <section id="contact" style="margin-top:2rem;">
+            <h2>Contact</h2>
+            <p>
+                Questions or requests? Email us at <a href="mailto:printworks@example.com" style="color:#ff00c8;">printworks@example.com</a>
+            </p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Print Works. All rights reserved.
+    </footer>
+</body>
+</html>
